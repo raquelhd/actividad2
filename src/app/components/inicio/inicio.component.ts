@@ -11,5 +11,6 @@ export class InicioComponent {
 
   constructor() {
     this.usuario = "Debería mostrar el nombre del usuario validado";
+    this.usuario = "Debería mostrar el nombre del usuario validado";
   }
 }
