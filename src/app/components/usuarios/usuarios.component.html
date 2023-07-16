@@ -1,0 +1,121 @@
+<header class="titulo_principal">
+    <h1 class="titulo_principal">Registro de usuarios</h1>
+    <div class="fondo_titulo">
+
+
+    </div>
+</header>
+
+<p>
+    <a routerLink="/usr_list">Listado de usuarios</a>
+</p>
+
+<!--<div class="usuarios" *ngFor="let usr of usuarios">-->
+<div>
+    <span>{{ usr.nombre }} </span>
+    <span>{{ usr.empresa}}</span>
+</div>
+
+<!--En la etiqueta form, usa el evento ngSubmit para escuchar el envío del 
+    formulario e invocar el método onSubmit() con el valor checkoutForm-->
+<!--<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">-->
+<form>
+    <div class="row g-3">
+        <div class="col-md-6">
+            <label for="nombre"> Nombre: </label>
+            <input id="nombre" type="text" formControlName="nombre" class="form-control"
+                placeholder="Introduce el nombre del usuario">
+        </div>
+        <div class="col-md-6">
+            <label for="apellidos">
+                Apellido:
+            </label>
+            <input id="apellidos" type="text" formControlName="apellidos" class="form-control"
+                placeholder="Introduce los apellidos del usuario">
+        </div>
+
+        <div class="col-md-6">
+            <label for="dni"> DNI: </label>
+            <input id="dni" type="text" formControlName="dni" class="form-control" placeholder="Introduce el dni">
+        </div>
+
+        <div class="col-md-6 ">
+            <label for="email">
+                Email:
+            </label>
+            <input id="email" type="email" formControlName="email" class="form-control"
+                placeholder="Introduce el correo electronico del usuario">
+        </div>
+
+        <div class="col-md-6 ">
+            <label for="telefono">
+                Teléfono:
+            </label>
+            <input id="telefono" type="text" formControlName="telefono" class="form-control"
+                placeholder="Introduce el teléfono del usuario">
+        </div>
+
+        <div class="col-md-3">
+            <label for="fecha_nac">
+                Fecha Nacimiento:
+            </label>
+            <input id="fnac" type="date" formControlName="fnac" class="form-control"
+                placeholder="Introduce la fecha de nacimiento del usuario" value="1990-01-01">
+        </div>
+
+        <div class="col-md-6">
+            <label for="empresa">
+                Empresa:
+            </label>
+            <input id="empresa" type="text" formControlName="empresa" class="form-control"
+                placeholder="Selecciona la empresa a la que pertenece">
+        </div>
+
+        <legend class="col-form-label float-sm-left pt-0">
+            <p></p> Datos de Acceso al Sistema:
+        </legend>
+        <div class="col-md-6">
+            <label for="usuario">
+                Usuario:
+            </label>
+            <input id="usuario" type="text" formControlName="usuario" class="form-control"
+                placeholder="Usuario de acceso al sistema">
+        </div>
+
+        <div class="col-md-6">
+            <label for="contraseña">
+                Contraseña:
+            </label>
+            <input id="contraseña" type="password" formControlName="contraseña" class="form-control">
+        </div>
+
+        <fieldset class="form-group form-row">
+            <legend class="col-form-label float-sm-left pt-0">
+                <p></p> Tipo de Usuario:
+            </legend>
+            <div col-sm-2>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="administrador" value="administrador">
+                    <label class="form-check-label" for="Checkbox1">Administrador</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gestor" value="gestor">
+                    <label class="form-check-label" for="Checkbox2">Gestor</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="conductor" value="conductor">
+                    <label class="form-check-label" for="Checkbox3">Conductor</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button class="btn btn-primary" type="submit">Guardar</button>
+            </div>
+        </div>
+
+
+    </div>
+</form>

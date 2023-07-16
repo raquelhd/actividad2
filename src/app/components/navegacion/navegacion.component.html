@@ -1,17 +1,11 @@
 <nav class="menu_principal">
-	<ul>
-		<li><a>Inicio</a></li><!--
-		     -->
-		<li><a>Obras</a></li><!--
-		     -->
-		<li><a>Empresas</a></li><!--
-		     -->
-		<li><a>Usuarios</a></li><!--
-		     -->
-		<li><a>Pólizas</a></li><!--
-		     -->
-		<li><a>Vehículos</a></li><!--
-			-->
-		<li><a>Contacto</a></li>
-	</ul>
+    <ul>
+        <li [routerLinkActive]="['seleccionado']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/']">Inicio</a></li>
+        <li [routerLinkActive]="['seleccionado']"><a [routerLink]="['/obras']">Obras</a></li>
+        <li [routerLinkActive]="['seleccionado']"><a [routerLink]="['/empresas']">Empresas</a></li>
+        <li [routerLinkActive]="['seleccionado']"><a [routerLink]="['/usuarios']">Usuarios</a></li>
+        <li [routerLinkActive]="['seleccionado']"><a [routerLink]="['/polizas']">Polizas</a></li>
+		<li [routerLinkActive]="['seleccionado']"><a [routerLink]="['/vehiculos']">Vehículo</a></li>
+        <li [routerLinkActive]="['seleccionado']"><a [routerLink]="['/contacto']">Contacto</a></li>
+    </ul>
 </nav>
