@@ -1,0 +1,24 @@
+
+<div [formGroup]="loginForm" class="login-container">
+    <div class="wrapper">
+      <h2 class="login-title">Introduzca sus datos de usuario</h2>
+      <p>Nombre de usuario:</p>
+      <div class="input">
+        <input formControlName="nombre_usuario" type="text">
+        <i (click)="clickIcon()" class="glyphicon glyphicon-user"></i>
+      </div>
+      <p>Contraseña:</p>
+      <div class="input">
+        <input formControlName="constraseña" type="password">
+        <i (click)="clickIcon()" class="fas fa-key"></i>
+      </div>
+      <button [disabled]="loginForm.invalid" (click)="submit()">Entrar</button>
+    </div>
+    <div class="welcome-container">
+     <img class="fondo_welcome" src="src\imagenes\8116.jpg">
+      <div class="texto_welcome"> Bienvenido al Sistema de Gestión de Seguros </div><p></p>
+      <div class="centrado"> El aplicativo permite registrar vehículos, junto con sus permisos y pólizas de seguros, así como las empresas, obras y personal autorizado para gestionarlos.</div>-->
+      
+      
+    </div>
+  </div>

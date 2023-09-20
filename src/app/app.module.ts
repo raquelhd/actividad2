@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { routing } from './app.routing';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { InicioComponent } from './components/inicio/inicio.component';
@@ -14,6 +16,8 @@ import { UsuariosComponent } from './components/usuarios/usuarios.component';
 import { VehiculosComponent } from './components/vehiculos/vehiculos.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { ErrorComponent } from './components/error/error.component';
+import { LoginComponent } from './components/login/login.component';
+import { LateralComponent } from './components/lateral/lateral.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +32,15 @@ import { ErrorComponent } from './components/error/error.component';
     UsuariosComponent,
     VehiculosComponent,
     ContactoComponent,
-    ErrorComponent
+    ErrorComponent,
+    LoginComponent,
+    LateralComponent    
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

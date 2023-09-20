@@ -1,0 +1,125 @@
+.login-container {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
+
+}
+
+
+.welcome-container {
+    color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 5px 10px 5px;
+    width: 70%;
+    background-color: white;
+}    
+
+ .fondo_welcome {
+        background-image: url('src\imagenes\8116.jpg');
+        background-size: cover;
+        background-position: 0%;
+             height: 50%;
+            
+     
+    }
+
+   div .texto_welcome {
+        position: absolute;
+        text-align:center;
+        font-size: 2em;
+        font-weight: 500;
+        display: inline-block;
+        top: 10px;
+    left: 10px;
+      transform: translate(-50%, -50%);
+
+    }
+
+
+   div .centrado {
+    
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+
+
+.input {
+    width: 100%;
+    position: relative;
+
+    i {
+        color: black;
+        position: absolute;
+        right: 15px;
+        top: 12px;
+    }
+
+
+}
+
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1.5em;
+    height: max-content;
+    background-color: yellowgreen;
+    height: 100%;
+    padding: 30px;
+    box-shadow: 2px 0px 10px 2px gold;
+
+    @media screen and (min-width: 668px) {
+        width: 30%;
+    }
+}
+
+.login-title {
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 40px;
+    font-size: 1.5em !important;
+
+    @media screen and (min-width: 668px) {
+        font-size: 2em;
+    }
+}
+
+input {
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    outline: none;
+    color: black;
+    background-color: gold;
+    width: 90%;
+
+}
+
+button {
+    background-color: gold;
+    border-radius: 5px;
+    height: 50px;
+    outline: none;
+    margin-left: 30px;
+    font-size: 1em;
+    width: 90%;
+
+    &:disabled {
+        opacity: 0.5;
+    }
+}
+
+p {
+    color: white-dark;
+}
